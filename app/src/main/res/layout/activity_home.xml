@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".HomeActivity">
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/animationView"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_fileName="logout.json"-->
+<!--        app:lottie_loop="true" />-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rcvHome"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@id/fabAddCity"/>-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/fabAddCity"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:src="@drawable/ic_add" />-->
+
+    <EditText
+        android:id="@+id/cityNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên thành phố"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/stateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityNameEditText"
+        android:hint="Bang/Thành phố"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/countryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stateEditText"
+        android:hint="Quốc gia"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/populationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryEditText"
+        android:hint="Dân số"
+        android:inputType="number"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/populationEditText"
+        android:layout_centerHorizontal="true"
+        android:text="Thêm thành phố" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addButton"
+        android:paddingTop="16dp" />
+
+
+</LinearLayout>

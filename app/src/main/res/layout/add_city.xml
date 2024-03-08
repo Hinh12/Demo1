@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/cityNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên thành phố"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/stateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityNameEditText"
+        android:hint="Bang/Thành phố"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/countryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stateEditText"
+        android:hint="Quốc gia"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/populationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryEditText"
+        android:hint="Dân số"
+        android:inputType="number"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/populationEditText"
+        android:layout_centerHorizontal="true"
+        android:text="Thêm thành phố" />
+
+</RelativeLayout>
